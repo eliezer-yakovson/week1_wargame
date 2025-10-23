@@ -28,7 +28,7 @@ def compare_cards(p1_card:dict, p2_card:dict) -> str:
     p2_val=p2_card["value"]
     if p1_val > p2_val:
         return "p1"
-    elif p2_card > p1_card:
+    elif p1_val < p2_val:
         return "p2"
     return "WAR"
 
