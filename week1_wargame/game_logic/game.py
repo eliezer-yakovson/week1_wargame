@@ -15,23 +15,27 @@ def init_game()->dict:
     p1 = input()
     player_1 = create_player(p1)
     player_2 = create_player("")
-    for i,c in enumerate(deck):
-        if i<26:
-            player_1["hand"].append(c)
-        else:
-            player_2["hand"].append(c)
-
+    player_1["hand"]=deck[:26]
+    player_2["hand"]=deck[26:]
+    # for i,c in enumerate(deck):
+    #     if i<26:
+    #         player_1["hand"].append(c)
+    #     else:
+    #         player_2["hand"].append(c)
     return{"deck":deck, "player_1":player_1, "player_2":player_2}
 
-def play_round(p1:dict,p2:dict):
-    player_1=p1["hand"].pop()
-    player_2=p2["hand"].pop()
-    bigger = compare_cards(player_1,player_2)
-    if bigger =="p1":
-        p1["won_pile"].append(player_1)
-        p1["won_pile"].append(player_2)
-    elif bigger =="p2":
-        p2["won_pile"].append(player_1)
-        p2["won_pile"].append(player_2)
-    print(player_1["value"], end = "===")
-    print(player_2["value"])
+
+def play_round(p1: dict, p2: dict) -> str:
+    card1 = p1["hand"].pop()
+    card2 = p2["hand"].pop()
+    result = compare_cards(card1, card2)
+
+    if result == "p1":
+        p1["won_pile"] += [card1, card2]
+    elif result == "p2":
+        p2["won_pile"] += [card1, card2]
+
+    print(f"{p1['name']} drew {card1['rank']}{card1['suite']} ({card1['value']}) | "
+          f"{p2['name']} drew {card2['rank']}{card2['suite']} ({card2['value']}) → {result.upper()}")
+    return result
+

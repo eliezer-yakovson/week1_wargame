@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D4ABA89-143C-48BA-A103-F7B5AE6CC13C}|week1_wargame.pyproj|C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3D4ABA89-143C-48BA-A103-F7B5AE6CC13C}|week1_wargame.pyproj|solutionrelative:main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D4ABA89-143C-48BA-A103-F7B5AE6CC13C}|week1_wargame.pyproj|C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\game_logic\\game.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3D4ABA89-143C-48BA-A103-F7B5AE6CC13C}|week1_wargame.pyproj|solutionrelative:game_logic\\game.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4ABA89-143C-48BA-A103-F7B5AE6CC13C}|week1_wargame.pyproj|C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3D4ABA89-143C-48BA-A103-F7B5AE6CC13C}|week1_wargame.pyproj|solutionrelative:main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D4ABA89-143C-48BA-A103-F7B5AE6CC13C}|week1_wargame.pyproj|C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\utils\\deck.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,33 +36,33 @@
               "RelativeDocumentMoniker": "utils\\deck.py",
               "ToolTip": "C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\utils\\deck.py",
               "RelativeToolTip": "utils\\deck.py",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAjwBEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-23T06:41:52.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "game.py",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\game_logic\\game.py",
               "RelativeDocumentMoniker": "game_logic\\game.py",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\game_logic\\game.py",
-              "RelativeToolTip": "game_logic\\game.py",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\game_logic\\game.py*",
+              "RelativeToolTip": "game_logic\\game.py*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-23T06:40:23.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.py",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\main.py",
               "RelativeDocumentMoniker": "main.py",
               "ToolTip": "C:\\Users\\admin\\Desktop\\New folder (2)\\week1_wargame\\week1_wargame\\main.py",
               "RelativeToolTip": "main.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-23T06:37:02.569Z",
               "EditorCaption": ""

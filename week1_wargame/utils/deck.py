@@ -1,27 +1,20 @@
 import random
 
+def create_card(rank: str, suite: str) -> dict:
+    valid_suites = {'H', 'C', 'D', 'S'}
+    if suite not in valid_suites:
+        return {}
 
-def create_card(rank:str,suite:str) -> dict:
-    val=0
-    if not rank.isnumeric():
-        if rank == "J":
-            val = 11
-        elif rank == "Q":
-            val = 12
-        elif rank == "K":
-            val = 13
-        elif rank == "A":
-            val = 14
-    elif int(rank)>=2 or int(rank) <=10:
+    if rank.isnumeric():
         val = int(rank)
-    else:
-        return{}
-    if not suite.isnumeric(): 
-        if suite == 'H' or suite == 'C' or suite == 'D' or suite == 'S':
+        if 2 <= val <= 10:
             return {"rank": rank, "suite": suite, "value": val}
-    return{}
-    
-    
+    elif rank in {'J', 'Q', 'K', 'A'}:
+        val = {'J': 11, 'Q': 12, 'K': 13, 'A': 14}[rank]
+        return {"rank": rank, "suite": suite, "value": val}
+    return {}
+
+
 
 def compare_cards(p1_card:dict, p2_card:dict) -> str:
     p1_val=p1_card["value"]
@@ -33,24 +26,14 @@ def compare_cards(p1_card:dict, p2_card:dict) -> str:
     return "WAR"
 
     return ""
+
+
 def create_deck() -> list[dict]:
-    deck_of_cards=[]
-    card_suite_keys={"0":"H", "1":"C" ,"2":"D" ,"3":"S"}
-    card_rank_keys={"11":"J", "12":"Q" ,"13":"K" ,"14":"A"}
-    for suit in range(4):
-        for i in range(2,15):
-            if i<11:
-                s = card_suite_keys[str(suit)]
-                r = str(i)
-                cards= create_card(r,s)
-                deck_of_cards.append(cards)
-            else:
-                s = card_suite_keys[str(suit)]
-                r = card_rank_keys[str(i)]
-                cards= create_card(r,s)
-                deck_of_cards.append(cards)
-    print (len(deck_of_cards))
-    return deck_of_cards
+    ranks = [str(i) for i in range(2, 11)] + ['J', 'Q', 'K', 'A']
+    suites = ['H', 'C', 'D', 'S']
+    deck = [create_card(r, s) for s in suites for r in ranks]
+    return deck
+
 
 def shuffle(deck:list[dict]) -> list[dict]:
     shuffle_deck = deck.copy()
@@ -60,6 +43,12 @@ def shuffle(deck:list[dict]) -> list[dict]:
         if index1 != index2:
             shuffle_deck[index1], shuffle_deck[index2] = shuffle_deck[index2], shuffle_deck[index1]
     return shuffle_deck
+
+# def shuffle(deck: list[dict]) -> list[dict]:
+#     shuffled = deck.copy()
+#     random.shuffle(shuffled)
+#     return shuffled
+
 
 
 

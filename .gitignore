@@ -1,1 +1,107 @@
-ECHO is on.
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# 📦 Virtual Environments
+venv/
+**/venv/
+.venv/
+**/.venv/
+
+# 🔧 VS Code
+.vscode/
+
+# 🧪 PyCharm
+.idea/
+
+# 📁 Visual Studio / Rider
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+**/.vs/
+
+# 📦 Packages
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.spec
+
+# 🔐 Secret files
+.env
+.env.*
+
+# 🔄 Logs and local files
+*.log
+*.tmp
+*.bak
+
+# 🗃 SQLite or DB files
+*.sqlite
+*.db
+
+# 📄 System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 📜 Node.js (frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 📊 Coverage / Reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.lcov
+
+# 📷 Cache
+.cache/
+*.cache
+
+# 🚫 Ignore OS files
+Icon?
+ehthumbs.db
+
+# 🔍 Debug & profiling
+*.prof
+*.pid
+*.log
+
+# 💻 Executables
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 🔨 Compiled
+*.out
+*.o
+*.obj
+
+# 💬 ChatGPT Copilot / GitHub
+copilot-chat/
+copilot-logs/
+copilot-sessions/
+
+# 📁 Backup
+*~
+*.swp
+*.swn
+*.bak
+*.orig
+
+# 🧪 Test files
+.pytest_cache/
+.tox/
+.nox/
